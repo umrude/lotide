@@ -1,5 +1,5 @@
 /* eslint-disable space-before-function-paren */
-let eqArraysAssesm = function (arr1, arr2) {
+let assertArraysEqual = function (arr1, arr2) {
   let result = "";
   for (let x = 0; x <= arr1.length; x++) {
     if (arr1[x] !== arr2[x]) {
@@ -13,4 +13,4 @@ let eqArraysAssesm = function (arr1, arr2) {
   return result;
 };
 
-eqArraysAssesm([2, 2, 3], [1, 2, 3]);
+module.exports = assertArraysEqual;
