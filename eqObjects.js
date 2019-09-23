@@ -1,4 +1,4 @@
-let eqArrays = function (arr1, arr2) {
+let eqArrays = function(arr1, arr2) {
   let result;
   for (let x = 0; x <= arr1.length; x++) {
     if (arr1[x] !== arr2[x]) {
@@ -11,7 +11,7 @@ let eqArrays = function (arr1, arr2) {
   return result;
 };
 
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   let obj1 = Object.keys(object1);
   let obj2 = Object.keys(object2);
 
@@ -27,7 +27,7 @@ const eqObjects = function (object1, object2) {
         return false;
       }
       if (!Array.isArray(object1[i]) && !Array.isArray(object2[i])) {
-        if (!object2.hasOwnProperty(i)) { //else if not an array, treat at primitive data type
+        if (!Object.hasOwnProperty.call(object2, i)) { //else if not an array, treat at primitive data type
           // if object2 doesnt have object1[i] key return false
           return false;
         }
