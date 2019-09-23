@@ -1,4 +1,3 @@
-
 let middle = function(arr) {
   let result = [];
   let middleOdd = Math.floor(arr.length / 2);
