@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@umrude/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a mini clone of lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,8 @@
     "type": "git",
     "url": "git+https://github.com/umrude/lotide.git"
   },
-  "author": "",
+  "author": "Gabi Geollegue",
+  "collaboration": "Frank Zou",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/umrude/lotide/issues"

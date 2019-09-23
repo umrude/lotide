@@ -1,5 +1,4 @@
 
-
 let middle = function(arr) {
   let result = [];
   let middleOdd = Math.floor(arr.length / 2);
@@ -12,5 +11,6 @@ let middle = function(arr) {
   }
   return result;
 };
-
+let input = [1, 2, 5, 4, 5];
+console.log(middle(input));
 module.exports = middle;

@@ -14,4 +14,6 @@ let flatten = function(input) {
   return newArr;
 };
 
+module.exports = flatten;
+
 flatten([1, 2, [3, 4], 5, [6]]); // => [1, 2, 3, 4, 5, 6]

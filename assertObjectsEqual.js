@@ -31,7 +31,7 @@ const assertObjectsEqual = function(actual, expected) {
           return false;
         }
         if (!Array.isArray(object1[i]) && !Array.isArray(object2[i])) {
-          if (!object2.hasOwnProperty(i)) { //else if not an array, treat at primitive data type
+          if (!Object.hasOwnProperty.call(object2, i)) { //else if not an array, treat at primitive data type
             // if object2 doesnt have object1[i] key return false
             return false;
           }
@@ -52,9 +52,9 @@ const assertObjectsEqual = function(actual, expected) {
   } else if (!result) {
     message = `🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`;
   }
-  console.log(message);
+  return message;
 };
-
+module.exports = assertObjectsEqual;
 const ab = {
   a: "1",
   b: "2"
@@ -64,4 +64,4 @@ const ba = {
   a: "1"
 };
 
-assertObjectsEqual(ab, ba);
+console.log(assertObjectsEqual(ab, ba));

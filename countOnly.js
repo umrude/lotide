@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`😀Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -7,7 +7,7 @@ const assertEqual = function (actual, expected) {
 };
 
 let countOnly = function(allItems, itemsToCount) {
-  const results = {}
+  const results = {};
   for (const item of allItems) {// for the items in the list of all items ("item" in the for..of loop iterates through each of the items on the inputted list)
     if (itemsToCount[item]) { //if the item to count (ex. "jason":true) == to the current iteration of item then
       if (results[item]) { // if the item already is on the list vvvv (basically comparing the current iteration of the list to the current item)
@@ -18,7 +18,8 @@ let countOnly = function(allItems, itemsToCount) {
     }
   }
   return results;
-}
+};
+module.exports = countOnly;
 
 //countOnly will be given an array and an object. It will return an object containing counts of everything that the input object listed.
 //The function should report back how many instances of each string were found in the allItems array of strings.

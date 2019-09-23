@@ -9,7 +9,6 @@ let assertArraysEqual = function (arr1, arr2) {
       result = "Assesment Passed: Arrays are equal!";
     }
   }
-  console.log(result);
   return result;
 };
 
