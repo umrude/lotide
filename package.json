@@ -2,7 +2,7 @@
   "name": "@umrude/lotide",
   "version": "1.0.1",
   "description": "a mini clone of lodash",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
