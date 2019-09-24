@@ -10,6 +10,6 @@ let middle = function(arr) {
   }
   return result;
 };
-let input = [1, 2, 5, 4, 5];
-console.log(middle(input));
+// let input = [1, 2, 5, 4, 5];
+// console.log(middle(input));
 module.exports = middle;

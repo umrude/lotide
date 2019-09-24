@@ -8,7 +8,7 @@ let eqArrays = function(arr1, arr2) {
       result = true;
     }
   }
-  console.log(result);
+  //console.log(result);
   return result;
 };
 
