@@ -1,6 +1,6 @@
 {
   "name": "@umrude/lotide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a mini clone of lodash",
   "main": "index.js",
   "directories": {
