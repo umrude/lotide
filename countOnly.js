@@ -1,11 +1,3 @@
-// const assertEqual = function(actual, expected) {
-//   if (actual === expected) {
-//     console.log(`😀Assertion Passed: ${actual} === ${expected}`);
-//   } else {
-//     console.log(`😤Assertion Failed: ${actual} !== ${expected}`);
-//   }
-// };
-
 let countOnly = function(allItems, itemsToCount) {
   const results = {};
   for (const item of allItems) {// for the items in the list of all items ("item" in the for..of loop iterates through each of the items on the inputted list)
@@ -20,6 +12,14 @@ let countOnly = function(allItems, itemsToCount) {
   return results;
 };
 module.exports = countOnly;
+
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`😀Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`😤Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
 
 //countOnly will be given an array and an object. It will return an object containing counts of everything that the input object listed.
 //The function should report back how many instances of each string were found in the allItems array of strings.
